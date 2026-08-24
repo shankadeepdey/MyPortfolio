@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // ===== Scroll progress bar =====
+  //  Scroll progress bar 
   const progress = document.getElementById('scrollProgress');
   function updateProgress(){
     const h = document.documentElement;
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', updateProgress, { passive: true });
   updateProgress();
 
-  // ===== Nav background on scroll + active link highlight =====
+  //  Nav background on scroll + active link highlight 
   const nav = document.querySelector('nav');
   const navLinks = document.querySelectorAll('.navlinks a, .mobile-panel a[href^="#"]');
   const sections = document.querySelectorAll('main section[id]');
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // ===== Mobile menu toggle =====
+  //  Mobile menu toggle 
   const navToggle = document.getElementById('navToggle');
   const mobilePanel = document.getElementById('mobilePanel');
   const mobileBackdrop = document.getElementById('mobileBackdrop');
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.matchMedia('(min-width: 960px)').addEventListener('change', (e) => { if (e.matches) closeMobileMenu(); });
   }
 
-  // ===== Typing effect for hero role line =====
+  //  Typing effect for hero role line 
   const roles = [
     'Computer Science Engineer',
     'Problem Solver',
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // ===== Scroll reveal (IntersectionObserver) =====
+  //  Scroll reveal (IntersectionObserver) 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // ===== Count-up numbers =====
+  //  Count-up numbers 
   const counters = document.querySelectorAll('.num[data-count]');
   const countIO = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -138,12 +138,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
   counters.forEach(el => countIO.observe(el));
 
-  // Text-based stat (e.g. "Top 5%")
+ 
   document.querySelectorAll('.num[data-text]').forEach(el => {
     el.textContent = el.dataset.text;
   });
 
-  // ===== Portrait tilt on mouse move =====
+  //  Portrait tilt on mouse move 
   const tilt = document.getElementById('portraitTilt');
   if (tilt && !reduceMotion && window.matchMedia('(hover: hover)').matches) {
     tilt.addEventListener('mousemove', (e) => {
@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===== Project card tilt =====
+  //  Project card tilt 
   if (!reduceMotion && window.matchMedia('(hover: hover)').matches) {
     document.querySelectorAll('.tilt-card').forEach(card => {
       card.addEventListener('mousemove', (e) => {
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===== Magnetic buttons =====
+  //  Magnetic buttons 
   if (!reduceMotion && window.matchMedia('(hover: hover)').matches) {
     document.querySelectorAll('.magnetic').forEach(btn => {
       btn.addEventListener('mousemove', (e) => {
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ===== Cursor glow =====
+  //  Cursor glow 
   const glow = document.getElementById('cursorGlow');
   if (glow && !reduceMotion && window.matchMedia('(hover: hover)').matches) {
     document.addEventListener('mousemove', (e) => {
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseleave', () => { glow.style.opacity = '0'; });
   }
 
-  // ===== Education timeline: traveling dot =====
+  //  Education timeline: traveling dot 
   const eduTimeline = document.getElementById('eduTimeline');
   const eduDot = document.getElementById('eduProgressDot');
   const eduFill = document.getElementById('eduProgressFill');
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateEduDot);
   }
 
-  // ===== Smooth anchor scroll offset for sticky nav =====
+  //  Smooth anchor scroll offset for sticky nav 
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e){
       const id = this.getAttribute('href').slice(1);
