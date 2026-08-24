@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shankadeep Dey — Computer Science Engineer</title>
+<meta name="description" content="Portfolio of Shankadeep Dey, B.Tech Computer Science student with a focus on problem solving and web development. Open to job and internship opportunities.">
+<meta name="keywords" content="Shankadeep Dey, Computer Science, Problem Solving, Web Developer, Java, Python, Asansol Engineering College">
+<meta name="author" content="Shankadeep Dey">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shankadeep Dey — Computer Science Engineer">
+<meta property="og:description" content="B.Tech CSE student focused on problem solving and building web applications. Open to internships and full-time roles.">
+<meta property="og:image" content="portrait_art.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Shankadeep Dey — Computer Science Engineer">
+<meta name="twitter:description" content="B.Tech CS student focused on problem solving and building web applications.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E0F13'/%3E%3Ccircle cx='22' cy='24' r='9' fill='%23FF7A3D'/%3E%3Ccircle cx='40' cy='22' r='7' fill='%232FD1C0'/%3E%3Ccircle cx='31' cy='40' r='10' fill='%233B82C4'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo"><span class="swatches"><span></span><span></span><span></span></span>Shankadeep Dey</a>
+    <div class="navlinks">
+      <a href="#about"><span>About</span></a>
+      <a href="#education"><span>Education</span></a>
+      <a href="#skills"><span>Skills</span></a>
+      <a href="#experience"><span>Experience</span></a>
+      <a href="#projects"><span>Projects</span></a>
+      <a href="#contact"><span>Contact</span></a>
+    </div>
+    <a class="btn btn-ghost magnetic" href="#contact">Contact me</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobilePanel">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-backdrop" id="mobileBackdrop"></div>
+<nav class="mobile-panel" id="mobilePanel" aria-hidden="true">
+  <a href="#about"><span>About</span></a>
+  <a href="#education"><span>Education</span></a>
+  <a href="#skills"><span>Skills</span></a>
+  <a href="#experience"><span>Experience</span></a>
+  <a href="#projects"><span>Projects</span></a>
+  <a href="#contact"><span>Contact</span></a>
+  <a class="btn btn-primary" href="#contact" style="margin-top:8px;">Contact me</a>
+</nav>
+
+<main id="top">
+
+  <section class="hero" id="home">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="swatches stagger-item"><span></span><span></span><span></span></div>
+        <h1 class="stagger-item"><span class="who">I'm</span>Shankadeep Dey</h1>
+        <div class="role stagger-item"><span id="typedRole"></span><span class="caret">|</span></div>
+        <p class="lede stagger-item">B.Tech Computer Science student who likes breaking problems down and building clean, working solutions — from algorithms and databases to full-stack apps people can actually use. Currently open to internships and full-time roles.</p>
+        <div class="hero-actions stagger-item">
+          <a class="btn btn-primary magnetic" href="https://drive.google.com/file/d/1f1k-UquPIsTo2ddoFs-N4ZWcTkyRRC2y/view?usp=sharing" target="_blank" rel="noopener">View Resume ↗</a>
+          <a class="btn btn-ghost magnetic" href="#projects">See projects</a>
+        </div>
+      </div>
+      <div class="portrait-wrap stagger-item">
+        <div class="portrait-glow"></div>
+        <div class="portrait tilt" id="portraitTilt">
+          <img src="portrait_art.png" alt="Painted portrait of Shankadeep Dey" width="1216" height="1440">
+          <div class="portrait-sheen"></div>
+          <div class="portrait-auto-shine"></div>
+        </div>
+        <span class="float-chip chip-avail"><span class="dot"></span>Open to work</span>
+        <span class="float-chip chip-role">CSE &middot; Problem Solving skills</span>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">// About</div>
+        <h2>Grounded in fundamentals, driven by problem solving Skills (DSA)</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p>I'm currently pursuing my B.Tech in Computer Science Engineering at Asansol Engineering College, after completing a Diploma in Computer Science Technology at Raghunathpur Government Polytechnic.</p>
+          <p>What I enjoy most is the problem-solving side of computer science — working through a tricky algorithm, structuring a database properly, or debugging something until it finally clicks — backed by solid DSA, OOPs, and DBMS fundamentals. I also work across the web stack when a project needs an interface, not just logic.</p>
+          <p>I have also ranked in the top 5% of learners on my NPTEL Java course.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="row"><span class="k">EDUCATION</span><span class="v">B.Tech CSE, AEC</span></div>
+          <div class="row"><span class="k">CGPA</span><span class="v">8.23</span></div>
+          <div class="row"><span class="k">FOCUS</span><span class="v">Problem Solving skills</span></div>
+          <div class="row"><span class="k">STATUS</span><span class="v">Open to work</span></div>
+          <div class="row"><span class="k">BASED IN</span><span class="v">West Bengal, IN</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">// Education</div>
+        <h2>Education &amp; academic milestones</h2>
+        <p>The formal track, plus a few milestones along the way.</p>
+      </div>
+
+      <div class="edu-timeline" id="eduTimeline">
+        <div class="edu-progress-fill" id="eduProgressFill"></div>
+        <div class="edu-progress-dot" id="eduProgressDot"></div>
+
+        <div class="edu-item reveal">
+          <span class="edu-node"></span>
+          <div class="edu-card">
+            <div class="edu-top">
+              <span class="edu-period">2024 – 2028 &middot; Currently in 4th year</span>
+              <span class="edu-score">CGPA 8.23 / 10</span>
+            </div>
+            <h3>B.Tech in Computer Science &amp; Engineering</h3>
+            <p>Asansol Engineering College, West Bengal</p>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <span class="edu-node"></span>
+          <div class="edu-card">
+            <div class="edu-top">
+              <span class="edu-period">2021 – 2024</span>
+              <span class="edu-score">CGPA 8.0 / 10</span>
+            </div>
+            <h3>Diploma in Computer Science Technology</h3>
+            <p>Raghunathpur Government Polytechnic</p>
+          </div>
+        </div>
+
+        <div class="edu-item reveal">
+          <span class="edu-node"></span>
+          <div class="edu-card">
+            <div class="edu-top">
+              <span class="edu-period">2021</span>
+              <span class="edu-score">77%</span>
+            </div>
+            <h3>Class X — Indian Certificate of Secondary Education (ICSE)</h3>
+            <p>Loyola School</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="milestone-grid">
+        <div class="milestone-card reveal">
+          <span class="m-mark">▸</span>
+          <p>Ranked in the <strong>top 5%</strong> of learners, scoring 95% in the NPTEL "OOPs Using Java" course.</p>
+        </div>
+        <div class="milestone-card reveal">
+          <span class="m-mark">▸</span>
+          <p>Represented Asansol Engineering College at <strong>JIS Tech Fest 2026</strong> in the AI-enabled Smart Systems category.</p>
+        </div>
+        <div class="milestone-card reveal">
+          <span class="m-mark">▸</span>
+          <p>Certified: NPTEL — Programming in Java, Principles of Management, and Cloud Computing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">// Skills</div>
+        <h2>The toolkit I build with</h2>
+      </div>
+      <div class="skill-groups">
+        <div class="skill-card reveal">
+          <h3>Languages &amp; Core</h3>
+          <div class="chip-row">
+            <span class="chip">Java</span><span class="chip">Python</span><span class="chip">C</span>
+            <span class="chip">DSA</span><span class="chip">OOPs</span><span class="chip">DBMS</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Machine Learning</h3>
+          <div class="chip-row">
+            <span class="chip">Machine Learning</span><span class="chip">Computer Vision</span>
+            <span class="chip">OpenCV</span><span class="chip">Arduino</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Web</h3>
+          <div class="chip-row">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+            <span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">Excel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">// Experience</div>
+        <h2>By the numbers</h2>
+      </div>
+      <div class="stats" style="margin-bottom:56px;">
+        <div class="stat-card reveal"><div class="num" data-count="4" data-suffix="+">0</div><div class="lbl">Projects shipped</div></div>
+        <div class="stat-card reveal"><div class="num" data-count="8.23" data-decimals="2">0</div><div class="lbl">Current CGPA</div></div>
+        <div class="stat-card reveal"><div class="num" data-count="3">0</div><div class="lbl">Internships &amp; simulations</div></div>
+        <div class="stat-card reveal"><div class="num" data-text="Top 5%">0</div><div class="lbl">NPTEL Java (OOPs)</div></div>
+      </div>
+      <div class="timeline reveal">
+        <div class="t-item">
+          <span class="period">Jun 2025</span>
+          <h3>Deloitte — Cyber Job Simulation (Forage)</h3>
+          <p>Completed a practical cybersecurity job simulation, applying core concepts to analyze and solve simulated business security challenges.</p>
+        </div>
+        <div class="t-item">
+          <span class="period">Aug – Sept 2023</span>
+          <h3>Dreamz Vision Finishing School — Computer Hardware &amp; Networking</h3>
+          <p>Learned hardware troubleshooting and basic networking concepts.</p>
+        </div>
+        <div class="t-item">
+          <span class="period">Nov – Dec 2022</span>
+          <h3>Ardent Computech Pvt. Ltd. — Music Gallery (PHP &amp; MySQL)</h3>
+          <p>Developed a dynamic web application using PHP and MySQL.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">// Projects</div>
+        <h2>Selected work</h2>
+        <p>Four projects spanning vision, ML, and full-stack web.</p>
+      </div>
+      <div class="proj-grid">
+        <div class="proj-card reveal tilt-card">
+          <span class="tagline">vision / hardware</span>
+          <h3>AI-Based Smart Exam Hall Monitoring System</h3>
+          <p>Real-time computer vision system to detect academic dishonesty, combining eye tracking and mobile-phone detection with Arduino-triggered alerts.</p>
+          <div class="proj-stack"><span>Python</span><span>OpenCV</span><span>YOLO</span><span>Arduino</span></div>
+        </div>
+        <div class="proj-card reveal tilt-card">
+          <span class="tagline">machine learning</span>
+          <h3>Prediction of Train Delay using Machine Learning</h3>
+          <p>Built and benchmarked KNN, Logistic Regression, and Decision Tree models to predict train delays from historical data.</p>
+          <div class="proj-stack"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Matplotlib</span></div>
+        </div>
+        <div class="proj-card reveal tilt-card">
+          <span class="tagline">web app</span>
+          <h3>Weather Web App</h3>
+          <p>Responsive weather application pulling live conditions from a public REST API.</p>
+          <div class="proj-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST APIs</span></div>
+        </div>
+        <div class="proj-card reveal tilt-card">
+          <span class="tagline">full-stack</span>
+          <h3>Music Gallery</h3>
+          <p>Web-based music gallery with search and in-browser playback, backed by a relational database.</p>
+          <div class="proj-stack"><span>PHP</span><span>MySQL</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div class="eyebrow">// Get in touch</div>
+        <h2>Let's build something together</h2>
+        <p>Open to full-time roles and internships in software development, machine learning, or computer vision.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <div class="lbl">Call me</div>
+          <a class="val" href="tel:+917001224696">+91 7001224696</a>
+        </div>
+        <div class="contact-card reveal">
+          <div class="lbl">Mail me</div>
+          <a class="val" href="mailto:shankadeepdey@gmail.com">shankadeepdey@gmail.com</a>
+        </div>
+        <div class="contact-card reveal">
+          <div class="lbl">Based in</div>
+          <div class="val">Barakar, West Bengal, IN</div>
+        </div>
+      </div>
+      <div class="avail reveal">
+        <div class="avail-left">
+          <span class="dot"></span>
+          <div>
+            <h3>Available for jobs &amp; internships</h3>
+            <p>Reach out directly or connect on LinkedIn.</p>
+          </div>
+        </div>
+        <a class="btn btn-primary magnetic" href="https://www.linkedin.com/in/shankadeep-dey/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="logo"><span class="swatches"><span></span><span></span><span></span></span>Shankadeep Dey</div>
+      <div class="foot-links">
+        <a href="https://www.linkedin.com/in/shankadeep-dey/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:shankadeepdey@gmail.com">Email ↗</a>
+        <a href="https://drive.google.com/file/d/1f1k-UquPIsTo2ddoFs-N4ZWcTkyRRC2y/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+      </div>
+    </div>
+    <div class="foot-note">© <span id="year"></span> Shankadeep Dey. Built as a static, dependency-free page.</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
